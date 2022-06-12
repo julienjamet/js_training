@@ -124,7 +124,15 @@ document.addEventListener("keypress", function(e) {
         keypressContainer.style.background = "green";
         right();
     }
+    else if (e.key === "A") {
+        keypressContainer.style.background = "green";
+        right(); 
+    }
     else if (e.key === "e") {
+        keypressContainer.style.background = "green";
+        right(); 
+    }
+    else if (e.key === "E") {
         keypressContainer.style.background = "green";
         right(); 
     }
@@ -132,17 +140,33 @@ document.addEventListener("keypress", function(e) {
         keypressContainer.style.background = "green";
         right();  
     }
+    else if (e.key === "I") {
+        keypressContainer.style.background = "green";
+        right(); 
+    }
     else if (e.key === "o") {
         keypressContainer.style.background = "green";
         right();  
+    }
+    else if (e.key === "O") {
+        keypressContainer.style.background = "green";
+        right(); 
     }
     else if (e.key === "u") {
         keypressContainer.style.background = "green";
         right();  
     }
+    else if (e.key === "U") {
+        keypressContainer.style.background = "green";
+        right(); 
+    }
     else if (e.key === "y") {
         keypressContainer.style.background = "green";
         right();  
+    }
+    else if (e.key === "Y") {
+        keypressContainer.style.background = "green";
+        right(); 
     }
     else {
         keypressContainer.style.background = "red";
@@ -153,7 +177,7 @@ document.addEventListener("keypress", function(e) {
 const nav = document.querySelector("nav");
 
 window.addEventListener("scroll", function() {
-    if (this.window.scrollY > 500) {
+    if (this.window.scrollY > 700) {
         nav.style.top = 0;
     }
     else {
