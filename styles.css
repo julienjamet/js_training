@@ -1,0 +1,83 @@
+@keyframes false {
+    0% {
+        transform: translateX(-10px);
+    }
+    10% {
+        transform: translateX(10px);
+    }
+    20% {
+        transform: translateX(-10px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    40% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes true {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    color: white;
+    min-height: 200vh;
+}
+
+.box {
+    border: 6px solid white;
+    transition: 1000ms;
+    background: black;
+    padding: 10px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    opacity: 0;
+    width: 100%;
+    transition: 500ms;
+}
+
+.p--visible--true {
+    opacity: 1;
+    color: green;
+    animation: true 400ms forwards;
+}
+
+.p--visible--false {
+    opacity: 1;
+    color: red;
+    transform: rotate(3deg);
+}
+
+.question-click--true {
+    border-radius: 150px;
+    border: 6px dashed green;
+}
+
+.question-click--false {
+    border-radius: 150px;
+    border: 6px dashed red;
+    animation: false 400ms forwards;
+}
