@@ -110,3 +110,44 @@ input, select {
 label {
     margin-left: -15px;
 }
+
+.calc {
+    display: grid;
+    width: 400px;
+    margin: 100px auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px repeat(5, 30px);
+    grid-template-areas: 
+    "result result result result"
+    "9 8 7 reset"
+    "6 5 4 reset"
+    "3 2 1 reset"
+    "0 dot plus minus"
+    "equal equal times div";
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.calc h3 {
+    text-align: right;
+    margin: 7px 10px 0 0;
+    font-size: 2rem;
+    color: black;
+    grid-area: result;
+}
+.calc button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.calc button:hover {
+    color: black;
+    background-color: white;
+}
+#equal {
+    grid-area: equal;
+}
+#clear {
+    grid-area: reset;
+}

@@ -45,11 +45,3 @@ btn2.addEventListener("mouseup", function() {
 btn2.addEventListener("mouseout", function() {
     btn2.style.transform = "scale(1)";
 });
-
-
-
-
-
-
-
-
