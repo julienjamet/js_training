@@ -1,51 +1,3 @@
-/*
-let total = 0;
-
-function addition(x) {
-    total += x; 
-    return total;
-}
-
-function soustraction(x) {
-    total -= x; 
-    return total;
-}
-
-function multiplication(x) {
-    total *= x; 
-    return total;
-}
-
-function division(x) {
-    total /= x; 
-    return total;
-}
-
-function reset() {
-    total = 0; 
-}
-
-console.log(addition(3));
-console.log(addition(5));
-console.log(soustraction(8));
-console.log(soustraction(14));
-console.log(addition(3));
-console.log(multiplication(10));
-console.log(division(2));
-reset();
-console.log(total);
-*/
-
-/*----------------------------------------------------*/
-
-/*
-const test = document.querySelector("h4");
-console.log(test);
-test.style.background = "green";
-*/
-
-/*----------------------------------------------------*/
-
 const questionContainer = document.querySelector(".click-event");
 const btn1 = document.querySelector("#btn--1");
 const btn2 = document.querySelector("#btn--2");
@@ -79,7 +31,6 @@ btn1.addEventListener("mouseout", function() {
     btn1.style.transform = "scale(1)";
 })
 
-
 btn2.addEventListener("mouseenter", function() {
     btn2.style.transform = "scale(1.1)";
 })
@@ -93,125 +44,12 @@ btn2.addEventListener("mouseup", function() {
 })
 btn2.addEventListener("mouseout", function() {
     btn2.style.transform = "scale(1)";
-})
-
-
-/*
-questionContainer.addEventListener("click", function() {
-    questionContainer.classList.toggle("question-click");
-    console.log("Click !");
-})
-*/
-const keypressContainer = document.querySelector(".keypress");
-const key = document.getElementById("key");
-
-const right = function() {
-    const audio = new Audio();
-    audio.src = "./right.mp3";
-    audio.play();
-}
-
-const wrong = function() {
-    const audio = new Audio();
-    audio.src = "./wrong.mp3";
-    audio.play();
-}
-
-document.addEventListener("keypress", function(e) {
-    key.textContent = e.key;
-
-    if (e.key === "a") {
-        keypressContainer.style.background = "green";
-        right();
-    }
-    else if (e.key === "A") {
-        keypressContainer.style.background = "green";
-        right(); 
-    }
-    else if (e.key === "e") {
-        keypressContainer.style.background = "green";
-        right(); 
-    }
-    else if (e.key === "E") {
-        keypressContainer.style.background = "green";
-        right(); 
-    }
-    else if (e.key === "i") {
-        keypressContainer.style.background = "green";
-        right();  
-    }
-    else if (e.key === "I") {
-        keypressContainer.style.background = "green";
-        right(); 
-    }
-    else if (e.key === "o") {
-        keypressContainer.style.background = "green";
-        right();  
-    }
-    else if (e.key === "O") {
-        keypressContainer.style.background = "green";
-        right(); 
-    }
-    else if (e.key === "u") {
-        keypressContainer.style.background = "green";
-        right();  
-    }
-    else if (e.key === "U") {
-        keypressContainer.style.background = "green";
-        right(); 
-    }
-    else if (e.key === "y") {
-        keypressContainer.style.background = "green";
-        right();  
-    }
-    else if (e.key === "Y") {
-        keypressContainer.style.background = "green";
-        right(); 
-    }
-    else {
-        keypressContainer.style.background = "red";
-        wrong();
-    }
-})
-
-const nav = document.querySelector("nav");
-
-window.addEventListener("scroll", function() {
-    if (this.window.scrollY > 700) {
-        nav.style.top = 0;
-    }
-    else {
-        nav.style.top = "-50px";
-    }
-})
-
-
-
-
-const formName = document.querySelector('input[type="text"]');
-const formPlanet = document.querySelector("select");
-const form = document.querySelector("form");
-const recap = document.getElementById("recap");
-
-let pseudo = "";
-let planet = "";
-
-formName.addEventListener("input", function(e) {
-    pseudo = e.target.value;
-})
-formPlanet.addEventListener("input", function(e) {
-    planet = e.target.value;
-})
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    if (cgv.checked) {
-        recap.innerHTML =
-        `<h4>Nom : ${pseudo}</h4>
-         <h4>Planète sélectionnée : ${planet}</h4>
-         <h5>Bon voyage !</h5>`;
-    }
-    else {
-        alert("Veuillez accepter les Conditions Générales de Vente");
-    }
 });
+
+
+
+
+
+
+
+

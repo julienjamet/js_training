@@ -49,6 +49,14 @@ body {
     background: black;
     padding: 10px;
 }
+.box a {
+    color: white;
+    text-decoration: none;
+    margin: 0 80px 0 80px;
+}
+.box a:hover {
+    text-decoration: underline;
+}
 button:hover {
     cursor: pointer;
 }
