@@ -153,10 +153,40 @@ document.addEventListener("keypress", function(e) {
 const nav = document.querySelector("nav");
 
 window.addEventListener("scroll", function() {
-    if (this.window.scrollY > 400) {
+    if (this.window.scrollY > 500) {
         nav.style.top = 0;
     }
     else {
         nav.style.top = "-50px";
     }
 })
+
+
+
+
+const formName = document.querySelector('input[type="text"]');
+const formPlanet = document.querySelector("select");
+const form = document.querySelector("form");
+const recap = document.getElementById("recap");
+
+let pseudo = "";
+let planet = "";
+
+formName.addEventListener("input", function(e) {
+    pseudo = e.target.value;
+})
+formPlanet.addEventListener("input", function(e) {
+    planet = e.target.value;
+})
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    if (cgv.checked) {
+        recap.innerHTML =
+        `<h4>Pseudo : ${pseudo}</h4>
+         <h4>Planète sélectionnée : ${planet}</h4>`;
+    }
+    else {
+        alert("Veuillez accepter les Conditions Générales de Vente");
+    }
+});
