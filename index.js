@@ -207,7 +207,7 @@ form.addEventListener("submit", function(e) {
 
     if (cgv.checked) {
         recap.innerHTML =
-        `<h4>Pseudo : ${pseudo}</h4>
+        `<h4>Nom : ${pseudo}</h4>
          <h4>Planète sélectionnée : ${planet}</h4>
          <h5>Bon voyage !</h5>`;
     }
