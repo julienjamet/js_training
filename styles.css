@@ -69,7 +69,7 @@ p {
 
 .p--visible--true {
     opacity: 1;
-    color: green;
+    color: yellowgreen;
     animation: true 400ms forwards;
 }
 
