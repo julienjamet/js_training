@@ -104,6 +104,13 @@ ul {
     align-items: center;
     padding: 0;
 }
+ul li {
+    transition: 800ms;
+}
+ul li:hover {
+    color: black;
+    cursor: default;
+}
 input, select {
     margin: 0 20px 0 20px;
 }
